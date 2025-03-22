@@ -7,21 +7,21 @@
 "use strict"
 
 /**
- * This function calculates area of a triangle.
+ * This function calculates volume of a prism or cylinder.
  */
-function calculateAreaOfTriangle() {
+function calculateVolumeOfObject() {
   // input
-  const baseOfTriangle = parseFloat(
-    document.getElementById("base-of-triangle").value
+  const baseAreaOfObject = parseFloat(
+    document.getElementById("base-area-of-object").value
   )
-  const heightOfTriangle = parseFloat(
-    document.getElementById("height-of-triangle").value
+  const heightOfObject = parseFloat(
+    document.getElementById("height-of-object").value
   )
 
   // process
-  const areaOfTriangle = (baseOfTriangle * heightOfTriangle) / 2
+  const volumeOfObject = baseAreaOfObject * heightOfObject
 
   // output
-  document.getElementById("area").innerHTML =
-    "The area is: " + areaOfTriangle + " cm²"
+  document.getElementById("volume").innerHTML =
+    "The volume is: " + volumeOfObject + " cm³"
 }
